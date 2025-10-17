@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACE ENGINEERING COLLEGE - Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f7ff;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      background-color: #ffffff; /* Blue background */
+      color: rgb(0, 44, 241); /* Black text */
+      text-align: center;
+      padding: 20px 0;
+      margin: 0;
+    }
+    h2 {
+      text-align: center;
+      color: #222;
+      margin-top: 20px;
+    }
+    .container {
+      width: 60%;
+      margin: 30px auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      background-color: #02d453;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>ACE ENGINEERING COLLEGE</h1>
+  <h2>Registration Form</h2>
+
+  <div class="container">
+    <form action="#" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email ID:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="phone">Mobile Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your mobile number" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">--Select--</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="course">Select Course:</label>
+      <select id="course" name="course" required>
+        <option value="">--Select Course--</option>
+        <option value="cse">Computer Science Engineering</option>
+        <option value="ece">Electronics and Communication Engineering</option>
+        <option value="eee">Electrical and Electronics Engineering</option>
+        <option value="mech">Mechanical Engineering</option>
+        <option value="civil">Civil Engineering</option>
+      </select>
+
+     
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
